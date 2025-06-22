@@ -1,0 +1,22 @@
+<div id="loginPage" class="page">
+  <h2>Iniciar Sesión</h2>
+  <input type="text" id="loginUsername" placeholder="Usuario">
+  <input type="password" id="loginPassword" placeholder="Contraseña">
+  <button onclick="handleLogin()">Entrar</button>
+  <p>¿No tienes cuenta? <a href="#" onclick="showPage('registerPage')">Regístrate</a></p>
+</div>
+
+<div id="registerPage" class="page" style="display:none">
+  <h2>Registrarse</h2>
+  <input type="text" id="registerUsername" placeholder="Usuario">
+  <input type="password" id="registerPassword" placeholder="Contraseña">
+  <button onclick="handleRegister()">Crear cuenta</button>
+  <p>¿Ya tienes cuenta? <a href="#" onclick="showPage('loginPage')">Inicia sesión</a></p>
+</div>
+
+<div id="mainApp" style="display:none" class="page">
+  <h2>Bienvenido, <span id="userGreeting"></span> 👋</h2>
+  <div id="chatBox" class="chat-box"></div>
+  <input type="text" id="userMessage" placeholder="Escribe tu mensaje…">
+  <button onclick="sendMessage()">Enviar</button>
+</div>
